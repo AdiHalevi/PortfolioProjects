@@ -90,7 +90,7 @@ SET PropertySplitCity = SUBSTRING( PropertyAddress, CHARINDEX(',',  PropertyAddr
 SELECT * 
 FROM NashvilleHousing
 
----- Easier way for breaking the address
+
 
 SELECT PARSENAME(REPLACE(OwnerAddress, ',', '.'),3),
        PARSENAME(REPLACE(OwnerAddress, ',', '.'),2),
